@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.yaml",
+  "urls": [
+    {
+      "url": "https://raw.githubusercontent.com/c4m0uflag3/swagger-xss-poc/refs/heads/main/xss.yaml",
+      "name": "XSS PoC"
+    }
+  ]
+}
